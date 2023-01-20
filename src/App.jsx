@@ -1,10 +1,12 @@
 import './App.css';
 import { Title } from './components/Title';
 import { Countdown } from './components/Countdown';
+import { useCountdown } from './hooks/useCountdown';
 
 import Fundo from './assets/vacation.jpg';
 
 function App() {
+  const x = useCountdown("Jan 1, 2024  00:00:00")
 
   return (
     <div className="App" style={{backgroundImage: `url(${Fundo})`}}>
